@@ -41,7 +41,7 @@ def get_streamlit_input():
 
 def validate_column_names(input_dataframe):
     if input_dataframe.drop(['id'], axis=1).columns.tolist() != feature_names:
-        print('Columns do not match our template. Please upload another file.')
+        st.text('Columns do not match our template. Please upload another file.')
         exit()
     return
 
@@ -49,7 +49,7 @@ def validate_column_names(input_dataframe):
 def validate_data_types(input_dataframe):
     for column in input_dataframe.columns:
         if input_dataframe[column].dtype == 'object':
-            print('Unexpected values found in file. Please upload another file.')
+            st.text('Unexpected values found in file. Please upload another file.')
             exit()
     return
 
