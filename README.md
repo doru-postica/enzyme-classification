@@ -23,6 +23,6 @@ This project is based on Kaggle challenge available [here](https://www.kaggle.co
   * Leaderboard: 376/1056
 
 ### 🚀 Model deployment
-* Deployed on Streamlit, live version can be found [here](TBD).
+* Deployed on Streamlit, live version can be found [here](https://enzyme-classification.streamlit.app/).
 * Given an input file, model can run predictions for both labels and provide a download file.
   * *A sample file is also provided*
