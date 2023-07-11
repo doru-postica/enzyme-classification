@@ -1,9 +1,6 @@
 import pandas as pd
 import streamlit as st
 import joblib
-import sys
-
-sys.tracebacklimit = 0
 
 
 def load_models():
